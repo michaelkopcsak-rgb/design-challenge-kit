@@ -8,6 +8,6 @@ A Claude Code workflow for timeboxed product design challenges: from prompt to f
 - **Commands:** `/challenge-start`, `/agentic-pack`, `/prototype`, `/iterate`, `/readout` in [.claude/commands](.claude/commands)
 - **Kit skills:** `agentic-ux-visuals`, `agentic-guardrails-spec`, `agentic-scenarios` in [.claude/skills](.claude/skills)
 
-The kit skills extend an eight-skill agentic UX pack (`agentic-ux` router plus intent preview, autonomy dial, explainable rationale, confidence signals, action audit & undo, escalation gates, generative UI).
+The kit skills extend an eight-skill agentic UX pack in [skills/agentic-ux-pack](skills/agentic-ux-pack): the [`agentic-ux`](skills/agentic-ux-pack/agentic-ux/SKILL.md) router plus intent preview, autonomy dial, explainable rationale, confidence signals, action audit & undo, escalation gates and generative UI. All eight share one risk scale (T0 read → T3 irreversible) and route to each other. To use them in Claude, upload each folder as a skill, or copy them into `~/.claude/skills/`.
 
 Stack for prototypes: React, Vite, TypeScript, Tailwind, shadcn/ui. Compatible with Lovable through GitHub sync.
