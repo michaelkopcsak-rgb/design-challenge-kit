@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "app",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "app", "--", "--port", "5190", "--strictPort"],
+      "port": 5190
+    },
+    {
+      "name": "readout",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "5191", "--bind", "127.0.0.1", "--directory", "output/readout"],
+      "port": 5191
+    }
+  ]
+}
