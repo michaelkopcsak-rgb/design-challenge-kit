@@ -23,7 +23,7 @@ From the framing and scenarios: the 3–6 screens or states the prototype needs,
 
 ## 3. UI decisions checkpoint (Michael adjusts)
 
-Before building, list about 10 decisions as a numbered list, each with a one-line reason. Use `docs/component-map.md` defaults for agentic patterns. Example: "4. Approvals go in a side queue, not a modal, because the agent keeps working on T2 tasks while it waits." Ask Michael to approve or change by number. Log the final decisions.
+Before building, list about 10 decisions as a numbered list, each with a one-line reason that cites the job or principle it serves (from `output/framing.md`). Use `docs/component-map.md` defaults for agentic patterns. Example: "4. Approvals go in a side queue, not a modal (Principle 2, Job 1.3), because the agent keeps working on T2 tasks while it waits." A decision that serves no job or principle is either cut or flagged. Ask Michael to approve or change by number. Log the final decisions with their job/principle references, so `/evaluate` can fill the traceability table.
 
 ## 4. Build
 
@@ -33,4 +33,4 @@ Before building, list about 10 decisions as a numbered list, each with a one-lin
 
 ## 5. Hand off
 
-Screenshot the main flow. Log decisions. Finish with time used, time left, and suggested `/iterate` targets.
+Screenshot the main flow. Log decisions. Finish with time used, time left, and suggested `/iterate` targets. Remind Michael to leave ~25 minutes for `/evaluate` before `/readout`.

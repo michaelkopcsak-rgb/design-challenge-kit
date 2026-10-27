@@ -15,13 +15,22 @@ A timeboxed workflow (3–4 hours) for taking a design-challenge prompt from bri
 
 | Step | Command | Produces |
 |---|---|---|
-| 1 | `/challenge-start` | `output/framing.md`: research, reframed problem, users, success criteria, bets |
+| 1 | `/challenge-start` | Skill selection, then `output/framing.md` (problem, proto-personas, jobs, principles, bets) and `output/traceability.md` |
 | 2 | `/agentic-pack` | Only if the challenge is agentic. Selected specs in `output/artifacts/`, plus visuals |
-| 3 | `/prototype` | Working prototype in `app/` |
+| 3 | `/prototype` | Working prototype in `app/`; every UI decision cites a job or principle |
 | 4 | `/iterate <change>` | Repeat as needed. Each change logged |
+| 4b | `/evaluate` | `output/evaluation.md`: inspection against principles and jobs, test plan, measurement plan; traceability table completed |
 | 5 | `/readout` | `output/readout/`: the page set Michael presents and shares |
 
 Steps 2 and 3 can overlap: the scenarios from step 2 define the prototype states for step 3.
+
+## Traceability
+
+`output/traceability.md` is the spine of the work: job to be done → principle → design decision → test task → metric. Every step that creates one of those adds it to the table. A decision with no job or principle behind it gets questioned; a job with no decision is a named gap.
+
+## Users are assumptions until researched
+
+Proto-personas and jobs written during a challenge are labeled *assumption, untested* everywhere they appear. Never present invented users as research.
 
 ## Prototype stack
 
@@ -33,7 +42,13 @@ Steps 2 and 3 can overlap: the scenarios from step 2 define the prototype states
 
 ## Agentic skills
 
-Global (synced from claude.ai, do not edit here): `agentic-ux` (router) and the seven `agentic-ux-*` pattern skills.
+## Thinking skills
+
+Selected per challenge in `/challenge-start` and recorded in the brief under "Skills selected": `design-challenge-framer`, `persona-designer` (proto mode) + `jtbd-writer`, `pdes-design-principles`, `pdes-heart-metrics-plan`, `pdes-usability-test-plan`. Run them at challenge depth: the core table and filled examples, not the full template.
+
+## Agentic skills
+
+Global (synced from claude.ai, do not edit here): `agentic-ux` (router) and the seven `agentic-ux-*` pattern skills. A copy is published in `skills/agentic-ux-pack/`.
 Local to this kit (`.claude/skills/`): `agentic-ux-visuals`, `agentic-guardrails-spec`, `agentic-scenarios`.
 `/agentic-pack` decides which of these run.
 
@@ -42,6 +57,8 @@ Local to this kit (`.claude/skills/`): `agentic-ux-visuals`, `agentic-guardrails
 ```
 output/
   framing.md          step 1
+  traceability.md     started in step 1, completed in /evaluate
+  evaluation.md       /evaluate
   decision-log.md     running
   artifacts/          step 2 specs and visual sources (Markdown + Mermaid)
   readout/            step 5 presentable HTML pages

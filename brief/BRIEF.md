@@ -17,6 +17,11 @@
 ## Constraints and givens
 -
 
+## Skills selected
+(filled by the selection interview in /challenge-start)
+- Thinking:
+- Agentic:
+
 ## What they're probably evaluating
 (inferred from the role and prompt; mark as assumption)
 -

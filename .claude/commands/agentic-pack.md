@@ -2,9 +2,9 @@
 description: Step 2 — choose which agentic UX skills apply to this challenge, run only those, then add scenarios, guardrails and visuals
 ---
 
-Step 2 of the design challenge workflow, for agentic challenges only. Stages: **Bet** and **Make** in `framework/HOW-I-THINK.md`.
+Step 2 of the design challenge workflow, for agentic challenges only. Stage 3, **Principles & bets**, in `framework/HOW-I-THINK.md`, feeding stage 4, **Make**.
 
-Read `brief/BRIEF.md` and `output/framing.md` first. If framing is missing, stop and recommend `/challenge-start`.
+Read `brief/BRIEF.md` and `output/framing.md` first. Use the proto-personas and jobs to decide who triggers, approves and is affected by each action, and check the pattern choices against the principles. If framing is missing, stop and recommend `/challenge-start`.
 
 ## A. Inventory (always, ~10 min)
 
