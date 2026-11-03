@@ -10,6 +10,7 @@
 - **Timebox:** (e.g. 4 hours)
 - **Started at:**
 - **Confidential / NDA?:** (decides whether the repo can be public)
+- **Prototype location:** (`app/`, a file path, or a URL such as a Lovable project)
 
 ## The prompt
 (paste verbatim)

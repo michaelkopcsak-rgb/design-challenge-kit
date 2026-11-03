@@ -1,10 +1,15 @@
 ---
 description: Step 4b — check the prototype against principles and jobs, plan how to test it with real users, and plan how to measure it
+argument-hint: [optional: prototype path or URL, or parts to add]
 ---
 
-Runs after `/prototype` and some `/iterate` rounds. Stages 5 and 6 in `framework/HOW-I-THINK.md`: **Evaluate** and **Measure**. About 25 minutes.
+**Setup:** read `{{KIT}}/CLAUDE.md` and find the workspace as it describes. Paths like `brief/`, `output/` and `app/` below are inside the workspace; `framework/` and `docs/` are in the kit.
 
-Read `brief/BRIEF.md` (including "Skills selected"), `output/framing.md`, `output/traceability.md`, `output/decision-log.md`, and the guardrails spec if it exists. Screenshot the prototype's main flow.
+Runs after `/prototype` and some `/iterate` rounds. Stages 5 and 6 in `{{KIT}}/framework/HOW-I-THINK.md`: **Evaluate** and **Measure**. About 25 minutes.
+
+Optional from Michael (a prototype path or URL, or parts to add such as "also do the usability test plan"): $ARGUMENTS
+
+Read `brief/BRIEF.md` (including "Skills selected" and "Prototype location"), `output/framing.md`, `output/traceability.md`, `output/decision-log.md`, and the guardrails spec if it exists. If `output/framing.md` is missing, say the inspection has nothing to check against and offer to run `/challenge-start` first. Open the prototype from "Prototype location" (or the path given above) in the browser pane and screenshot its main flow.
 
 ## A. Inspection: does it align? (~10 min, always)
 
@@ -50,3 +55,5 @@ Fill the **Metric** column of `output/traceability.md`.
 - `output/evaluation.md`: inspection findings, test plan, measurement plan (only the selected parts)
 - `output/traceability.md` complete, with gaps marked
 - Decisions logged. Finish with time used, time left, and next step (`/iterate` fixes or `/readout`).
+
+**End:** offer the next step as the kit rules describe. Recommended: `/iterate` for the fixes Michael chose, then `/readout`.

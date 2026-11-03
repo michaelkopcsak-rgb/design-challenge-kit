@@ -2,7 +2,9 @@
 description: Step 2 — choose which agentic UX skills apply to this challenge, run only those, then add scenarios, guardrails and visuals
 ---
 
-Step 2 of the design challenge workflow, for agentic challenges only. Stage 3, **Principles & bets**, in `framework/HOW-I-THINK.md`, feeding stage 4, **Make**.
+**Setup:** read `{{KIT}}/CLAUDE.md` and find the workspace as it describes. Paths like `brief/`, `output/` and `app/` below are inside the workspace; `framework/` and `docs/` are in the kit.
+
+Step 2 of the design challenge workflow, for agentic challenges only. Stage 3, **Principles & bets**, in `{{KIT}}/framework/HOW-I-THINK.md`, feeding stage 4, **Make**.
 
 Read `brief/BRIEF.md` and `output/framing.md` first. Use the proto-personas and jobs to decide who triggers, approves and is affected by each action, and check the pattern choices against the principles. If framing is missing, stop and recommend `/challenge-start`.
 
@@ -36,6 +38,8 @@ Then, in this order, for the selected kit skills:
 ## D. Check and hand off
 
 - Run the `agentic-ux` step 4 joint check across everything produced. Report broken joints.
-- List the prototype states the scenarios require and the components they need from `docs/component-map.md`.
+- List the prototype states the scenarios require and the components they need from `{{KIT}}/docs/component-map.md`.
 - Log selections and key decisions in `output/decision-log.md`.
 - Finish with: what was produced, time used, time left, recommended next step (`/prototype`).
+
+**End:** offer the next step as the kit rules describe. Recommended: `/prototype` (or `/evaluate` if the prototype already exists).

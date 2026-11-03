@@ -2,9 +2,11 @@
 description: Step 5 — assemble the readout Michael presents and shares with the employer
 ---
 
-Step 5 of the design challenge workflow. Stage 7, **Tell**, in `framework/HOW-I-THINK.md`.
+**Setup:** read `{{KIT}}/CLAUDE.md` and find the workspace as it describes. Paths like `brief/`, `output/` and `app/` below are inside the workspace; `framework/` and `docs/` are in the kit.
 
-Read `brief/BRIEF.md`, `output/framing.md`, `output/traceability.md`, `output/evaluation.md`, `output/decision-log.md`, everything in `output/artifacts/`, and screenshots of the prototype.
+Step 5 of the design challenge workflow. Stage 7, **Tell**, in `{{KIT}}/framework/HOW-I-THINK.md`.
+
+Read `brief/BRIEF.md`, `output/framing.md`, `output/traceability.md`, `output/evaluation.md`, `output/decision-log.md`, everything in `output/artifacts/`, and screenshots of the prototype from "Prototype location" in the brief.
 
 ## Structure (the story, ~15 minutes presented)
 
@@ -33,3 +35,5 @@ Ask Michael which sections to keep for this audience before building. Sections w
 ## Share check
 
 Before anything goes public, ask Michael: is the prompt under NDA or marked confidential? Does it include company data? If yes, recommend a private repo shared with specific people, or a public repo with the prompt paraphrased.
+
+**End:** offer the next step as the kit rules describe. Recommended: Stop here, or `/iterate` if the readout exposed a gap.

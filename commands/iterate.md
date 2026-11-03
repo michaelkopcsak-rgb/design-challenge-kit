@@ -3,7 +3,9 @@ description: Step 4 — make one structured change to the prototype and log the 
 argument-hint: <what to change and why>
 ---
 
-Step 4 of the design challenge workflow. Stages: **Make** and **Evaluate** in `framework/HOW-I-THINK.md`. Often used to fix findings from `/evaluate`.
+**Setup:** read `{{KIT}}/CLAUDE.md` and find the workspace as it describes. Paths like `brief/`, `output/` and `app/` below are inside the workspace; `framework/` and `docs/` are in the kit.
+
+Step 4 of the design challenge workflow. Stages: **Make** and **Evaluate** in `{{KIT}}/framework/HOW-I-THINK.md`. Often used to fix findings from `/evaluate`.
 
 Change requested: $ARGUMENTS
 
@@ -14,3 +16,5 @@ Change requested: $ARGUMENTS
 5. **Log** in `output/decision-log.md`: change · why · job or principle it serves · alternatives · stage. If `output/traceability.md` already has a Design decision for that job, update it.
 
 Keep changes small. If the request is really three changes, do them one at a time.
+
+**End:** offer the next step as the kit rules describe. Recommended: another `/iterate`, or `/evaluate` (or `/readout` if evaluation is done).

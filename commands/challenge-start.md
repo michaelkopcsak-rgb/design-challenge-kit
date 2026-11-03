@@ -3,13 +3,21 @@ description: Step 1 — take the challenge prompt, choose which thinking skills 
 argument-hint: [paste the challenge prompt, or leave empty to use brief/BRIEF.md]
 ---
 
-Step 1 of the design challenge workflow. Stages 1–3 in `framework/HOW-I-THINK.md`: **Frame**, **Users & jobs**, **Principles & bets**.
+**Setup:** read `{{KIT}}/CLAUDE.md` and find the workspace as it describes. Paths like `brief/`, `output/` and `app/` below are inside the workspace; `framework/` and `docs/` are in the kit.
+
+Step 1 of the design challenge workflow. Stages 1–3 in `{{KIT}}/framework/HOW-I-THINK.md`: **Frame**, **Users & jobs**, **Principles & bets**.
 
 Prompt from Michael (may be empty): $ARGUMENTS
 
-## A. Brief (~5 min)
+## A. Workspace and brief (~5 min)
 
-If a prompt was given, write it word for word into `brief/BRIEF.md` under "The prompt". Ask Michael (one AskUserQuestion call, up to 4 questions) for whatever the brief is still missing: company, role, timebox, audience, NDA. Note the start time.
+This command creates the workspace if there isn't one yet (a fresh challenge ignores `~/.claude/design-challenge-active`; ask if unsure whether this is a new challenge or the active one).
+
+1. Propose a short slug from the prompt and create `~/Projects/challenges/<slug>/` with `brief/BRIEF.md` from `{{KIT}}/templates/BRIEF.md`, `output/decision-log.md` from `{{KIT}}/templates/decision-log.md`, `output/artifacts/`, `output/readout/`, and `.claude/launch.json` from `{{KIT}}/templates/launch.json`. Run `git init` there. If the current folder is already a dedicated challenge folder (not `~/Projects` and not the kit), offer it as the workspace instead.
+2. Write the workspace path to `~/.claude/design-challenge-active`.
+3. If a prompt was given, write it word for word into `brief/BRIEF.md` under "The prompt".
+4. Ask Michael (one AskUserQuestion call, up to 4 questions) for whatever the brief is still missing: company, timebox, audience, NDA. Note the start time.
+5. **Existing prototype?** If Michael mentions one (a file path, a URL, a Lovable project), record it under "Prototype location". Read or open it now, so the framing describes what exists, and flag where the framing and the prototype disagree: that's useful, not a problem.
 
 ## B. Research (~10 min)
 
@@ -59,6 +67,8 @@ Create `output/traceability.md` with one row per job: the job, and the principle
 
 ## H. Hand off
 
-If the solution has an AI acting or deciding for the user, say so and recommend `/agentic-pack`; otherwise `/prototype`.
+If the solution has an AI acting or deciding for the user, say so and recommend `/agentic-pack`; otherwise `/prototype`. If a prototype already exists, `/prototype` is skipped.
 
 Write framing, personas, jobs, principles and bets to `output/framing.md`. Log the chosen direction and selections in `output/decision-log.md`. Finish with: time used, time left, next step.
+
+**End:** offer the next step as the kit rules describe. Recommended: `/agentic-pack` if agentic, otherwise `/prototype` (or `/evaluate` if the prototype already exists).

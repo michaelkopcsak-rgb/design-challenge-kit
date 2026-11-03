@@ -4,9 +4,15 @@ What you do, what Claude does, and what comes out at each step. Timings assume a
 
 ## Before the challenge (once)
 
-- [ ] Open a Claude Code session in `~/Projects/design-challenge-kit`
+- [ ] Install the kit globally: `./install.sh` in this repo (re-run after any kit change). The commands and kit skills then work in **any** Claude Code session, whatever folder it starts in
 - [ ] Edit `framework/HOW-I-THINK.md` into your own words
 - [ ] Optional, for Lovable polish: have a Lovable account connected to GitHub
+
+## How you move through it
+
+- Open a new session in any folder and type `/challenge-start` followed by the prompt. It creates the challenge's own workspace at `~/Projects/challenges/<slug>/` and remembers it as the active challenge.
+- **Every command ends by asking "What next?"** with the recommended next step first. Pick it and Claude continues in the same session; you don't retype anything. You can also type any command yourself at any time.
+- Already have a prototype (a file, a Lovable link)? Mention it in `/challenge-start`. It's recorded in the brief and `/prototype` is skipped.
 
 ## Step 0 — Set up the prototype app (5 min)
 
